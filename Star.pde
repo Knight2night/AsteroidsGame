@@ -1,4 +1,17 @@
-class Star //note that this class does NOT extend Floater
+Star[] nightSky = new Star[200];  //note that this class does NOT extend Floater
+public void setup()
 {
-  //your code here
+	size(500, 500);
+	for( int i = 0; i < nightSky.length; i++)
+{
+	nightSky[i] = new Star(0);
+	}
+}
+public void draw()
+{
+	background(0);
+	for( int i = 0; i < nightSky.length; i++)
+	{
+		nightSky[i].show();
+	}
 }
